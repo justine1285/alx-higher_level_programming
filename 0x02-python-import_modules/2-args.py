@@ -8,5 +8,5 @@ if __name__ == "__main__":
         print("{} argument:".format(tally -1))
     else:
         print("{} arguments:".format(tally -1))
-        for i in range(1, tally):
-            print("{}: {}".format(i, argv[i]))
+    for i in range(1, tally):
+        print("{}: {}".format(i, argv[i]))

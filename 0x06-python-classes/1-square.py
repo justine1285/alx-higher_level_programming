@@ -7,4 +7,3 @@ class Square():
     def __init__(self, size) -> None:
         """Iniatializes an instance attribute(s)"""
         self.__size = size
-

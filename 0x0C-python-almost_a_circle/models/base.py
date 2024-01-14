@@ -54,7 +54,7 @@ class Base:
         if list_objs:
             for obj in list_objs:
                 dict_list.append(obj.to_dictionary())
-            json_-rep = cls.to_json_string(dict_list)
+            json_rep = cls.to_json_string(dict_list)
             with open(f"{cls.__nam__}.json", "w", encoding="UTF-8") as file:
                 file.write(json_rep)
         else:

@@ -23,7 +23,7 @@ class Square(Rectangle):
         Note that width and height are equal for a Square object
         """
         str_rep = "[{}] ({}) {}/{} - {}"
-        idd, xx, yy, w = elf.id, self.x, self.y, self.idth
+        idd, xx, yy, w = self.id, self.x, self.y, self.idth
         return st_rep.format(__class__.__name__, idd, xx, yy, w)
 
     @property

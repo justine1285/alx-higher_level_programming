@@ -35,7 +35,7 @@ class Base:
         if not list_dictionaries:
             return "[]"
         json_rep = json.dumps(list_dictionaries, ensure_ascii=False)
-        return jon_rep
+        return json_rep
 
     @classmethod
     def save_to_file(cls, list_objs):
@@ -55,7 +55,7 @@ class Base:
             for obj in list_objs:
                 dict_list.append(obj.to_dictionary())
             json_rep = cls.to_json_string(dict_list)
-            with open(f"{cls.__nam__}.json", "w", encoding="UTF-8") as file:
+            with open(f"{cls.__name__}.json", "w", encoding="UTF-8") as file:
                 file.write(json_rep)
         else:
             with open(f"{cls.__name__}.json", "w", encoding="UTF-8") as file:
@@ -122,9 +122,9 @@ class Base:
 
             json_string = json.dumps(json_data)
 
-            list_of_json_rep = cls.fom_json_string(json_string)
+            list_of_json_rep = cls.from_json_string(json_string)
             for attr in list_of_json_rep:
-                list_of_instances.append(cls.create(**sttr))
+                list_of_instances.append(cls.create(**attr))
             return list_of_instances
 
     def update(self, *args, **kwargs):

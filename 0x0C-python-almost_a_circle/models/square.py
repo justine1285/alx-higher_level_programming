@@ -23,8 +23,8 @@ class Square(Rectangle):
         Note that width and height are equal for a Square object
         """
         str_rep = "[{}] ({}) {}/{} - {}"
-        idd, xx, yy, w = self.id, self.x, self.y, self.idth
-        return st_rep.format(__class__.__name__, idd, xx, yy, w)
+        idd, xx, yy, w = self.id, self.x, self.y, self.width
+        return str_rep.format(__class__.__name__, idd, xx, yy, w)
 
     @property
     def size(self):
@@ -39,7 +39,7 @@ class Square(Rectangle):
         Args:
             value: (int) value of object's width
         """
-        sef.width = value
+        self.width = value
         self.height = value
 
     def update(self, *args, **kwargs):

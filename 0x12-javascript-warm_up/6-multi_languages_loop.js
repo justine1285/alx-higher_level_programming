@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-onst arrayString = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
+const arrayString = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
 
 let i = 0;
 while (arrayString[i]) {

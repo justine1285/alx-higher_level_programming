@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-count size = process.argv[2];
+const size = process.argv[2];
 
 if (isNaN(size)) {
   console.log('Missing size');

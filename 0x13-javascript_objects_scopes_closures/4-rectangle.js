@@ -9,24 +9,24 @@ module.exports = class Rectangle {
   }
 
   print () {
-   for (let i = 0; i < this.height; i++) {
-     let row = '';
-     for (let j = 0; j < this.width; j++) {
-       row += 'X';
-     }
-     console.log(row);
+    for (let i = 0; i < this.height; i++) {
+      let row = '';
+      for (let j = 0; j < this.width; j++) {
+        row += 'X';
+      }
+      console.log(row);
+    }
    }
-  }
 
-  rotate () {
-    let temp = 0;
-    temp = this.height;
-    this.width = this.height;
-    this.height = temp;
-  }
+   rotate () {
+     let temp = 0;
+     temp = this.width;
+     this.width = this.height;
+     this.height = temp;
+   }
 
-  double () {
-    this.width *= 2;
-    this.height *= 2;
-  }
+   double () {
+     this.width *= 2;
+     this.height *= 2;
+   }
 };

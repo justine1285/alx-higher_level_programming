@@ -5,10 +5,10 @@ console.log(result);
 
 function factorial (num) {
   let value = 1;
-  if (isNan(num) || num == 1) {
+  if (isNaN(num) || num === 1) {
     return (1);
-  } esle {
-    value = num + factorial(num - 1);
+  } else {
+    value = num * factorial(num - 1);
     return (value);
   }
 }

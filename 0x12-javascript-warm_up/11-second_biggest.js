@@ -8,5 +8,5 @@ if (args.length < 2) {
   const sortedNumbers = args.sort((a, b) => b - a);
   const secondLargest = sortedNumbers[1];
 
-  console.log(seondLargest);
+  console.log(secondLargest);
 }

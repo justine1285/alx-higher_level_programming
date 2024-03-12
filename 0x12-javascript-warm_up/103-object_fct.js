@@ -11,7 +11,7 @@ myObject.incr = function () {
 
 myObject.incr();
 console.log(myObject);
-myObject.inr();
+myObject.incr();
 console.log(myObject);
-myObject.inr();
+myObject.incr();
 console.log(myObject);

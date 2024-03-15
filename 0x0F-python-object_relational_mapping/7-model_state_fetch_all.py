@@ -1,4 +1,4 @@
-#!/ust/bin/python3
+#!/usr/bin/python3
 """a script that lists all state objects from the database"""
 
 if __name__ == "__main__":

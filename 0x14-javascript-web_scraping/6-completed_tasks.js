@@ -1,5 +1,5 @@
 #!/usr/bin/node
-
+// web scrapper
 
 const request = require('request');
 
@@ -13,9 +13,9 @@ request.get(process.argv[2], { json: true }, (error, response, body) => {
   body.forEach((todo) => {
     if (todo.completed) {
       if (!tasksCompleted[todo.userId]) {
-	tasksCompleted[todo.userId] = 1;
+        tasksCompleted[todo.userId] = 1;
       } else {
-	tasksCompleted[todo.userId] = 1;
+        tasksCompleted[todo.userId] += 1;
       }
     }
   });
